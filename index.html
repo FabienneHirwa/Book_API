@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Book API</title>
+</head>
+<body>
+    <div id="home">
+    <div class="title">
+        <div class="overlay">
+            <i
+        class="fa-regular fa-book"
+            style="font-size: 48px; color: orange;"
+          ></i>
+        <h1 class="text-5xl pt-2">BOOK STORE</h1>
+        <i
+        class="fa-regular fa-book"
+            style="font-size: 48px; color: orange;"
+          ></i>
+    </div>
+    </div>
+    <div class="navBar">
+    <nav class="flex justify-center space-x-3">
+        <a href="#home" class="font-bold px-3 py-2 text-700 ">Home</a>
+        <a href="#about" class="font-bold px-3 py-2 text-700 ">About</a>
+        <a href="#books" class="font-bold px-3 py-2 text-700 ">Books</a>
+      </nav>
+    </div>
+</div>
+
+
+
+<div id="about">
+    <div class="grid grid-cols-3 gap-5 ml-20 mt-20 mr-20" id="aboutContent">
+        <div>
+            <img src="images/lib2.jpg" alt="">
+        </div>
+        <div >
+            <h2 class="font-bold text-2xl">KP Book Store</h2>
+            <p>Our library counts at this time thousands copies of books on different topics related to all the programs offered at KP and other books of reference, Encyclopedias, Journals, Research Reports, Newspapers and various other printed resources. </p> 
+            <br>
+            <h2 class="font-bold text-2xl">Vision</h2>
+            <p>Educating people with a positive impact on their socio economic and spiritual lives, and on the whole society.</p> 
+        </div>
+        <div ><img src="images/lib3.jpeg" alt=""></div>
+      </div>
+</div>
+
+<div id="books" class="mt-20 ml-20 mr-20">
+<h1 class="font-bold text-3xl">Search for a book</h1>
+<div class="grid-container">
+  <div class="search">
+    <input type="search" id="searchBar" onkeyup="searchBookByTitle()" placeholder="Search for a book..." title="Type in a name" >
+  </div>
+  <div class="filter">
+    <div class="dropdown">
+      <button class="dropbtn">Book filter
+        <i class="fa fa-angle-down" style="font-size:16px"></i>
+      </button>
+      <div class="dropdown-content">
+        <a onclick="displayAll()">All Books</a>
+      <a onclick="displayArrayOver2010()">Above 2010</a>
+      <a  onclick="displayArrayWithTwoAuthors()">Two Authors</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class=" pb-10" id="displayFlex">
+ 
+  </div>
+</div> 
+  </div> 
+    <footer>
+      <div class="copyright">
+        <p>Copyright &copy; 2022 Hirwa Fabienne</p>
+      </div>
+    </footer>
+  <script src="index.js"></script>
+
+</body>
+</html>
