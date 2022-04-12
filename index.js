@@ -4,7 +4,7 @@ let booksToBeDisplayed =`
 `
 document.getElementById("displayFlex").innerHTML = booksToBeDisplayed;
 
-
+//Displaying all books
 function displayAll(){
   fetch("https://the-dune-api.herokuapp.com/books/30")
   .then((response) => {
@@ -39,6 +39,7 @@ function displayAll(){
   });
 }
 displayAll();
+// Display books with two authors
 function displayArrayWithTwoAuthors(){
   let displayNewRes = booksDisplayArray.filter(book => Array.isArray(book.author))
   booksToBeDisplayed ="";
@@ -57,6 +58,7 @@ function displayArrayWithTwoAuthors(){
   });
   document.getElementById("displayFlex").innerHTML = booksToBeDisplayed;
 }
+// Display books btn 2010 and now
 function displayArrayOver2010(){
   let displayNewRes = booksDisplayArray.filter(book => book.year >= '2010' )
   booksToBeDisplayed ="";
@@ -75,6 +77,7 @@ function displayArrayOver2010(){
   });
   document.getElementById("displayFlex").innerHTML = booksToBeDisplayed;
 }
+// Search function
 function searchBookByTitle (){
   let searchString = document.getElementById("searchBar").value
   const filteredCharacters= booksDisplayArray.filter((item)=>{
