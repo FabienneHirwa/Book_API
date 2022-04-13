@@ -16,7 +16,7 @@ function displayAll(){
       booksDisplayArray.map((values) => {
       booksToBeDisplayed += `       
         <div class="mt-2" >
-        <img src="images/lib1.png">
+        <img src="https://picsum.photos/id/${values.id}/2500/1667">
             <h4>${values.id}</h4>
             <h4 class="text-xl text-green-700 bold">${values.title}</h4>
             <h3>${values.author}</h3>
@@ -46,7 +46,7 @@ function displayArrayWithTwoAuthors(){
    displayNewRes.map((values) => {
     booksToBeDisplayed += ` 
       <div class="mt-2" >
-       <img src="images/lib1.png">
+          <img src="https://picsum.photos/id/${values.id}/2500/1667">
           <h4>${values.id}</h4>
           <h4 class="text-xl text-green-700 bold">${values.title}</h4>
           <h3>${values.author}</h3>
@@ -65,7 +65,7 @@ function displayArrayOver2010(){
    displayNewRes.map((values) => {
     booksToBeDisplayed += ` 
       <div class="mt-2" >
-       <img src="images/lib1.png">
+          <img src="https://picsum.photos/id/${values.id}/2500/1667">
           <h4>${values.id}</h4>
           <h4 class="text-xl text-green-700 bold">${values.title}</h4>
           <h3>${values.author}</h3>
@@ -89,7 +89,7 @@ function searchBookByTitle (){
   filteredCharacters.map((values) => {
    booksToBeDisplayed += ` 
      <div class="mt-2" >
-      <img src="images/lib1.png">
+        <img src="https://picsum.photos/id/${values.id}/2500/1667">
          <h4>${values.id}</h4>
          <h4 class="text-xl text-green-700 bold">${values.title}</h4>
          <h3>${values.author}</h3>
